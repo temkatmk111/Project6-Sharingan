@@ -296,3 +296,303 @@ body {
     opacity: 0;
   }
 }
+@media (max-width: 1000px){
+  body {
+  display: flex;
+  background-color: rgb(50, 49, 49);
+  height: 1000px;
+  width: 1000px;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+}
+.etseg {
+   display: flex;
+  background-color: rgb(50, 49, 49);
+  height: 1000px;
+  width: 1000px;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ani {
+  position: absolute;
+  z-index: 10;
+  bottom: 100%;
+  width: 500px;
+  height: 300px;
+  background-color: black;
+  animation: ani 20s linear;
+}
+
+.nud {
+  position: relative;
+  height: 265px;
+  width: 460px;
+  border: 5px solid black;
+  border-top: 15px solid black;
+  border-left: 10px solid black;
+  background-color: aliceblue;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 7% 100% 3% 100%;
+  overflow: hidden;
+}
+.nud1 {
+  position: relative;
+  height: 265px;
+  width: 460px;
+  border: 5px solid black;
+  border-top: 15px solid black;
+  border-left: 10px solid black;
+  background-color: aliceblue;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 7% 100% 3% 100%;
+  overflow: hidden;
+}
+.har {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+}
+.engin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: rgb(3, 3, 3);
+  animation: engin 20s linear;
+}
+.suuder {
+  position: absolute;
+  height: 15px;
+  width: 20px;
+  left: 40px;
+  border-radius: 80% 20% 80% 20%;
+  transform: scale(90deg);
+  top: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px white;
+}
+.suuder1 {
+  position: absolute;
+  height: 15px;
+  width: 20px;
+  left: 140px;
+  border-radius: 20% 80% 20% 80%;
+  transform: scale(90deg);
+  top: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px white;
+}
+
+.zuraas {
+  height: 210px;
+  width: 210px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: repeating-conic-gradient(
+    #0000 0deg 7deg,
+    #0003 8deg 10deg,
+    #ffffff12 10deg 12deg
+  );
+  position: absolute;
+  border-radius: 50%;
+  animation: zuraas 20s linear;
+}
+
+.gol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 0 0 20px black;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140px;
+  width: 140px;
+  border: 2px solid black;
+  border-radius: 50%;
+  animation: shar 20s linear;
+}
+.ergeh {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140px;
+  width: 140px;
+  animation: circle 6s infinite linear;
+}
+.arm {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: rotate(var(--angle));
+}
+.arm:nth-child(1) {
+  --angle: 0deg;
+}
+.arm:nth-child(2) {
+  --angle: 120deg;
+}
+.arm:nth-child(3) {
+  --angle: 240deg;
+}
+.tomoe {
+  position: absolute;
+  inset: 0;
+
+  height: 40px;
+  width: 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 88'%3E%3Cpath fill='%23090509' d='M34 2 C23 17 24 28 39 31 C54 32 63 44 61 59 C59 75 45 83 30 80 C14 78 7 67 9 51 C10 32 20 13 34 2 Z'/%3E%3C/svg%3E");
+}
+.arm:nth-child(1) .tomoe {
+  animation: tomoe1 14.2s linear;
+}
+.arm:nth-child(2) .tomoe {
+  animation: tomoe2 14.2s linear;
+}
+.arm:nth-child(3) .tomoe {
+  animation: tomoe3 14.2s linear;
+}
+
+@keyframes ani {
+  0%,
+  10% {
+    bottom: 100%;
+  }
+  15%,
+  17% {
+    bottom: 0%;
+  }
+  22%,
+  82% {
+    bottom: 100%;
+  }
+
+  87%,
+  92% {
+    bottom: 0%;
+  }
+  94%,
+  100% {
+    bottom: 100%;
+  }
+}
+@keyframes engin {
+  0%,
+  15% {
+    display: flex;
+  }
+  16%,
+  87% {
+    display: none;
+  }
+
+  88%,
+  100% {
+    display: flex;
+  }
+}
+@keyframes zuraas {
+  0%,
+  15% {
+    display: none;
+  }
+  16%,
+  87% {
+    display: flex;
+  }
+
+  88%,
+  100% {
+    display: none;
+  }
+}
+@keyframes shar {
+  0%,
+  15% {
+    display: none;
+  }
+  16%,
+  87% {
+    display: flex;
+  }
+
+  88%,
+  100% {
+    display: none;
+  }
+}
+
+@keyframes circle {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes tomoe1 {
+  0%,
+  4% {
+    opacity: 0;
+  }
+  5%,
+  95% {
+    opacity: 1;
+  }
+  96%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes tomoe2 {
+  0%,
+  32% {
+    opacity: 0;
+  }
+  33%,
+  77% {
+    opacity: 1;
+  }
+  78%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes tomoe3 {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  41%,
+  59% {
+    opacity: 1;
+  }
+  60%,
+  100% {
+    opacity: 0;
+  }
+}
+}
